@@ -1,0 +1,5 @@
+{
+  "mesh_count": 1,
+  "required_objects": ["Skill smoke cube"],
+  "dimensions": {"Skill smoke cube": [1, 1, 1]}
+}
