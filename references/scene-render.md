@@ -2,7 +2,7 @@
 
 Read this reference only when a preview, lighting, camera composition, scene assembly, or final render is part of the request.
 
-For an ordinary verification preview, use a deterministic neutral preset rather than loading full camera, lighting, and rendering skills:
+For an ordinary verification preview, use a deterministic neutral preset:
 
 - EEVEE through `configure_render_engine()`;
 - neutral world background;
@@ -14,4 +14,4 @@ For an ordinary verification preview, use a deterministic neutral preset rather 
 
 Exclude hidden cutters, helpers, and oversized ground planes from camera fitting. Verify that the visible subject is centered and occupies a useful fraction of the frame. Decode the produced PNG and check dimensions; use luminance or dark-pixel gates only when visibility is a requirement.
 
-Load specialist camera/lighting/rendering guidance only for an artistic or technical requirement such as cinematic composition, HDRI matching, Cycles realism, depth of field, compositing, animation, or color-managed final delivery.
+For an artistic or technical requirement such as cinematic composition, HDRI matching, Cycles realism, depth of field, compositing, animation, or color-managed final delivery, plan the requested setup explicitly and verify the rendered output.

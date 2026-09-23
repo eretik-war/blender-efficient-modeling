@@ -1,6 +1,6 @@
 ---
 name: blender-efficient-modeling
-description: Create, modify, UV-map, texture, validate, and deliver Blender assets or modular scenes with minimal context and deterministic CLI execution. Use by default for direct Blender generation, including detailed reference-driven assets, repeated variants, and assembled layouts; load broader Blender skills only when a requested specialist workflow is absent here.
+description: Create, modify, UV-map, texture, validate, and deliver Blender assets or modular scenes with minimal context and deterministic CLI execution. Use for direct Blender generation, including detailed reference-driven assets, repeated variants, assembled layouts, and scene renders.
 ---
 
 # Blender Efficient Modeling
@@ -16,7 +16,7 @@ Use one compact contract, one staged build script, and targeted verification. Pr
 - Read [references/scene-render.md](references/scene-render.md) only when a preview, composed scene, lighting, camera, or final render is required.
 - Read [references/validation.md](references/validation.md) when defining a custom inspection spec or recovering from a failed build.
 
-Do not automatically load `text-to-blender`, `blender-pro-workflow`, `blender-skill-harmonizer`, or the full modeling/material/lighting/camera/rendering stack. Load a specialist skill only for a requirement this skill and its focused references do not cover.
+Use this skill and its focused references as the complete Blender workflow.
 
 ## Execution contract
 
@@ -45,7 +45,7 @@ finalize_job({"mesh_count": 1, "stage": "complete"})
 - Simple asset: build and verify in one pass.
 - Complex hard-surface or assembled asset: derive a feature inventory and adjacency plan, block out named components, validate silhouette and negative spaces, then add modifiers/details/UVs without replacing accepted components.
 - Repeated or modular scene: create each variant once, validate a variant matrix, approve a footprint plan, then place linked copies from deterministic records. Require exact instance counts, forbidden-overlap checks, access clearances, and spatial bounds before rendering.
-- High-curvature or organic asset: use procedural mesh/BMesh where predictable; if sculpting or learned mesh generation is genuinely required, state that boundary and load the relevant specialist workflow.
+- High-curvature or organic asset: use procedural mesh/BMesh where predictable; if sculpting or learned mesh generation is genuinely required, state the limitation and use appropriate Blender tooling when available.
 - Reference-locked asset: measure the reference first and validate silhouettes/proportions with comparable views before declaring completion.
 
 Cap blind retries. A retry must have a named failed check and a targeted correction. Preserve accepted prototypes, placement records, logs, and compact evidence; avoid full scene dumps and repeated screenshots when the relevant gate already passed.
